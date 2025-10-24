@@ -1,17 +1,19 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { useLocation } from "react-router-dom";
 
 const navItems = [
-  { label: "About", href: "#about" },
-  { label: "Experience", href: "#experience" },
-  { label: "Projects", href: "#projects" },
-  { label: "Contact", href: "#contact" },
+  { label: "About", href: "/about" },
+  { label: "Experience", href: "/experience" },
+  { label: "Projects", href: "/projects" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export const Navigation = ({ resume }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,6 +23,8 @@ export const Navigation = ({ resume }) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const isActive = (href) => location.pathname === href;
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -29,7 +33,7 @@ export const Navigation = ({ resume }) => {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <a href="#" className="text-xl font-bold gradient-text">
+          <a href="/" className="text-xl font-bold gradient-text">
             MJ
           </a>
 
@@ -39,7 +43,11 @@ export const Navigation = ({ resume }) => {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-sm hover:text-primary transition-colors"
+                className={`text-sm transition-colors ${
+                  isActive(item.href)
+                    ? "text-primary font-semibold"
+                    : "hover:text-primary"
+                }`}
               >
                 {item.label}
               </a>
@@ -72,7 +80,11 @@ export const Navigation = ({ resume }) => {
               <a
                 key={item.label}
                 href={item.href}
-                className="block px-4 py-2 hover:text-primary transition-colors"
+                className={`block px-4 py-2 transition-colors ${
+                  isActive(item.href)
+                    ? "text-primary font-semibold"
+                    : "hover:text-primary"
+                }`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {item.label}
