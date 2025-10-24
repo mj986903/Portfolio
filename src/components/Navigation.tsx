@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { useLocation } from "react-router-dom";
 
 const navItems = [
   { label: "About", href: "/about" },
@@ -12,6 +13,7 @@ const navItems = [
 export const Navigation = ({ resume }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,6 +22,8 @@ export const Navigation = ({ resume }) => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const isActive = (href) => location.pathname === href;
 
   return (
     <nav
@@ -39,7 +43,11 @@ export const Navigation = ({ resume }) => {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-sm hover:text-primary transition-colors"
+                className={`text-sm transition-colors ${
+                  isActive(item.href)
+                    ? "text-primary font-semibold"
+                    : "hover:text-primary"
+                }`}
               >
                 {item.label}
               </a>
@@ -72,7 +80,11 @@ export const Navigation = ({ resume }) => {
               <a
                 key={item.label}
                 href={item.href}
-                className="block px-4 py-2 hover:text-primary transition-colors"
+                className={`block px-4 py-2 transition-colors ${
+                  isActive(item.href)
+                    ? "text-primary font-semibold"
+                    : "hover:text-primary"
+                }`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {item.label}
