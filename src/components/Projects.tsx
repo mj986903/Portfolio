@@ -4,6 +4,15 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
+    title: "Corebuild Technologies",
+    description:
+      "Developed a modern, responsive website for Corebuild Technologies — a company specializing in advanced construction and automation solutions. The project focused on creating a professional online presence, highlighting their services, products, and industry expertise with smooth UI/UX and optimized performance.",
+    tags: ["Vite", "React", "Tailwind CSS", "JavaScript"],
+    gradient: "from-cyan-500 to-blue-500",
+    github: "https://github.com/GujjuTech/CoreBuild-Technologies",
+    demo : "https://corebuild-technologies.vercel.app/",
+  },
+  {
     title: "Quizwhiz",
     description:
       "QuizWhiz is a dynamic and interactive quiz application that allows users to create, manage, and take random quizzes seamlessly.",
