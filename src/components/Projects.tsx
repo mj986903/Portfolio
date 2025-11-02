@@ -2,11 +2,11 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 
-import corebuildImg from "@/assets/projects/corebuild.png";
-import linkedinImg from "@/assets/projects/linkedin.png";
-import quizwhizImg from "@/assets/projects/quizwhiz.png";
-import invoiceImg from "@/assets/projects/invoice.png";
-import visitorImg from "@/assets/projects/visitor.png";
+import corebuildImg from "@/assets/projects/corebuild.webp?url";
+import linkedinImg from "@/assets/projects/linkedin.webp?url";
+import quizwhizImg from "@/assets/projects/quizwhiz.webp?url";
+import invoiceImg from "@/assets/projects/invoice.webp?url";
+import visitorImg from "@/assets/projects/visitor.webp?url";
 
 const projects = [
   {
@@ -82,6 +82,7 @@ export const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
+                  loading="lazy"
                   className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
