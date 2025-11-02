@@ -6,7 +6,7 @@ const projects = [
   {
     title: "Corebuild Technologies",
     description:
-      "Developed a modern, responsive website for Corebuild Technologies — a company specializing in advanced construction and automation solutions. The project focused on creating a professional online presence, highlighting their services, products, and industry expertise with smooth UI/UX and optimized performance.",
+      "Developed a responsive company website showcasing Corebuild Technologies’ construction and automation services with a modern UI and optimized performance.",
     tags: ["Vite", "React", "Tailwind CSS", "JavaScript"],
     gradient: "from-cyan-500 to-blue-500",
     github: "https://github.com/GujjuTech/CoreBuild-Technologies",
@@ -15,7 +15,7 @@ const projects = [
   {
     title: "LinkedIn Connection Automator",
     description:
-      "Developed an intelligent LinkedIn automation tool that scrapes suggested connections, sends personalized connection requests, tracks pending requests, and automatically sends follow-up messages upon acceptance. The system runs daily to ensure consistent engagement and efficient network growth.",
+      "Built an automation tool to send, track, and manage LinkedIn connection requests and follow-up messages automatically.",
     tags: ["Python", "Playwright", "Automation", "Web Scraping", "Scheduling"],
     gradient: "from-indigo-500 to-purple-500",
     github: "https://github.com/GujjuTech/Web-Scrapping/tree/main/LinkedIn-Scraper",
