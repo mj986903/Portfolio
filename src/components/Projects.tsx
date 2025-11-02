@@ -13,6 +13,14 @@ const projects = [
     demo : "https://corebuild-technologies.vercel.app/",
   },
   {
+    title: "LinkedIn Connection Automator",
+    description:
+      "Developed an intelligent LinkedIn automation tool that scrapes suggested connections, sends personalized connection requests, tracks pending requests, and automatically sends follow-up messages upon acceptance. The system runs daily to ensure consistent engagement and efficient network growth.",
+    tags: ["Python", "Playwright", "Automation", "Web Scraping", "Scheduling"],
+    gradient: "from-indigo-500 to-purple-500",
+    github: "https://github.com/GujjuTech/Web-Scrapping/tree/main/LinkedIn-Scraper",
+  },
+  {
     title: "Quizwhiz",
     description:
       "QuizWhiz is a dynamic and interactive quiz application that allows users to create, manage, and take random quizzes seamlessly.",
