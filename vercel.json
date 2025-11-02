@@ -1,7 +1,7 @@
 {
   "rewrites": [
     {
-      "source": "/projects/technologies-technologies",
+      "source": "/projects/corebuild-technologies",
       "destination": "https://corebuild-technologies.vercel.app/"
     },
     {
