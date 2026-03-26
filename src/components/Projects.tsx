@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 
+import tilelensImg from "@/assets/projects/tilelens.webp?url";
 import corebuildImg from "@/assets/projects/corebuild.webp?url";
 import linkedinImg from "@/assets/projects/linkedin.webp?url";
 import quizwhizImg from "@/assets/projects/quizwhiz.webp?url";
@@ -10,6 +11,23 @@ import visitorImg from "@/assets/projects/visitor.webp?url";
 
 const projects = [
   {
+    title: "Visual Similarity Search Engine",
+    description:
+      "Built Python-based REST APIs using FastAPI to generate, store, and search image embeddings with a ResNet18 model, enabling one-to-many visual similarity search using cosine similarity and pgvector-backed indexing in PostgreSQL for low-latency retrieval.",
+    tags: [
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+      "pgvector",
+      "PyTorch",
+      "ResNet-18",
+      "OpenCV",
+    ],
+    image: tilelensImg,
+    gradient: "from-cyan-500 to-blue-500",
+    demo: "https://chitrastock.com/pages/image-search",
+  },
+  {
     title: "Corebuild Technologies",
     description:
       "Developed a responsive company website showcasing Corebuild Technologies’ construction and automation services with a modern UI and optimized performance.",
@@ -17,7 +35,7 @@ const projects = [
     image: corebuildImg,
     gradient: "from-cyan-500 to-blue-500",
     github: "https://github.com/GujjuTech/CoreBuild-Technologies",
-    demo : "https://corebuild-technologies.vercel.app/",
+    demo: "https://corebuild-technologies.vercel.app/",
   },
   {
     title: "LinkedIn Connection Automator",
@@ -26,7 +44,8 @@ const projects = [
     tags: ["Python", "Playwright", "Automation", "Web Scraping", "Scheduling"],
     image: linkedinImg,
     gradient: "from-indigo-500 to-purple-500",
-    github: "https://github.com/GujjuTech/Web-Scrapping/tree/main/LinkedIn-Scraper",
+    github:
+      "https://github.com/GujjuTech/Web-Scrapping/tree/main/LinkedIn-Scraper",
   },
   {
     title: "Quizwhiz",
