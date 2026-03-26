@@ -5,27 +5,27 @@ const skills = [
   {
     icon: Code2,
     title: "Full-Stack Development",
-    description: "React, Angular, TypeScript, Java, Spring Boot, Python, .NET",
+    description: "Java, Spring Boot, Python, ASP .NET, Flask, Gunicorn, Microservices, React, Angular",
   },
   {
     icon: Sparkles,
     title: "AI & Machine Learning",
-    description: "OpenAI GPT, LangChain, Vector DBs, Data Pipelines, Streamlit",
+    description: "Computer Vision, AI Automation Pipelines, Vector DBs, LangChain, Data Pipelines",
   },
   {
     icon: Zap,
     title: "Databases",
-    description: "MySQL, PostgreSQL, MongoDB, Firebase, Redis, MS SQL Server",
+    description: "MySQL, PostgreSQL, MS SQL Server, MongoDB, Firebase",
   },
   {
     icon: Target,
     title: "DevOps & Deployment",
-    description: "Docker, Kubernetes, GitHub Actions, CI/CD, Monitoring",
+    description: "Docker, Kubernetes, GitHub Actions, CI/CD, Airflow, Monitoring",
   },
   {
     icon: Cloud,
     title: "Cloud Platforms",
-    description: "AWS, Google Cloud, Azure, Vercel, Netlify",
+    description: " Azure, AWS, Google Cloud, Vercel, Netlify",
   },
   {
     icon: Palette,
@@ -36,7 +36,7 @@ const skills = [
     icon: Shield,
     title: "Security",
     description:
-      "Auth0, JWT, OAuth2, Role-Based Access Control, Data Encryption",
+      "Azure Authentication, Auth0, JWT, OAuth2, Role-Based Access Control, Data Encryption",
   },
 ];
 
